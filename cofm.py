@@ -21,11 +21,11 @@ def c_Prada(z,m):
 
     Parameters
     ----------
-    z : array_like
-        Redshifts of halos.
+    z : float or array_like
+        Redshift(s) of halos.
     
-    m : array_like
-        Masses of halos (using m200 definition), in units of solar masses.
+    m : float or array_like
+        Mass(es) of halos (using m200 definition), in units of solar masses.
 
     Returns
     ----------
@@ -109,11 +109,11 @@ def c_DuttonMaccio(z,m):
 
     Parameters
     ----------
-    z : array_like
-        Redshifts of halos.
+    z : float or array_like
+        Redshift(s) of halos.
     
-    m : array_like
-        Masses of halos (using m200 definition), in units of solar masses.
+    m : float or array_like
+        Mass(es) of halos (using m200 definition), in units of solar masses.
 
     Returns
     ----------
