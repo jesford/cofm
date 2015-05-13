@@ -44,14 +44,9 @@ def c_Prada(z,m):
 
     """
 
-    print type(z)
-    print type(m)
-
     #check compatibility of inputs, convert to numpy arrays if necessary
     z,m = test_Inputs(z,m)
 
-    print type(z)
-    print type(m)
 
     #EQ 13
     x = (1./(1.+z))*(Om_L/Om_M)**(1./3.)
