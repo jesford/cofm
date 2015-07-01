@@ -33,31 +33,24 @@ In the first case, each element of redshift is matched up with the corresponding
 #import one or all of the functions
 from cofm import c_Duffy, c_Prada,c_DuttonMaccio
 
-print c_Duffy(0.1,3e14)
-
 #for a single z and mass
+print c_Duffy(0.1,3e14)
 print c_Prada(0.1,3e14)
-
 print c_DuttonMaccio(0.1,3e14)
 
 #for several z and a single mass
 z = [0.1,0.3,0.5,0.7]
-
 m = 1e14
 
 print c_Prada(z,m)
-
 print c_DuttonMaccio(z,m)
 
 #a different mass for each of the different z
 m = [1e12,1e13,1e14,1e15]
 
 print c_Prada(z,m)
-
 print c_DuttonMaccio(z,m)
-
-<<<<<<< HEAD
-```
-=======
 print c_Duffy(z,m)
->>>>>>> 4d9afd90fbc76d71a239271e8c9797e580ab9970
+
+```
+
