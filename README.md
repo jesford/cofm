@@ -1,4 +1,5 @@
-## Concentration-Mass relations
+Concentration-Mass relations
+==============
 
 This python code calculates halo concentration, given halo mass and redshift. 
 
@@ -9,7 +10,8 @@ I plan to add more c(M) relations from the literature (and you are more than wel
 - **c_DuttonMaccio(z,m)**: from [Dutton & Maccio (2014)](http://arxiv.org/abs/1402.7073)
 
 
-#### How to use this code
+How to use this code
+--------------
 
 Both functions require, at minimum, a single redshift and a mass, for which to calculate halo concentration. Mass is defined as M200 (the total mass interior to a sphere within which the average density is 200 times the critical energy density of the universe) and must be given in units of solar mass. 
 
@@ -23,12 +25,17 @@ In the first case, each element of redshift is matched up with the corresponding
 
 #### Examples
 
+```python
+
+#import one or all of the functions
 from cofm import c_Prada,c_DuttonMaccio
 
+#for a single z and mass
 print c_Prada(0.1,3e14)
 
 print c_DuttonMaccio(0.1,3e14)
 
+#for several z and a single mass
 z = [0.1,0.3,0.5,0.7]
 
 m = 1e14
@@ -37,9 +44,11 @@ print c_Prada(z,m)
 
 print c_DuttonMaccio(z,m)
 
+#a different mass for each of the different z
 m = [1e12,1e13,1e14,1e15]
 
 print c_Prada(z,m)
 
 print c_DuttonMaccio(z,m)
 
+```
